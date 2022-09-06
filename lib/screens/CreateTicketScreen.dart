@@ -1,11 +1,9 @@
 import 'dart:convert';
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-
 import 'package:http/http.dart' as http;
-import 'package:sosotickettool/services/CreateTicketService.dart';
 import 'package:sosotickettool/widgets/AppBarWidget.dart';
+import 'package:sosotickettool/controllers/CreateTicketController.dart';
 
 String someVal = '';
 var chosenValue;
@@ -29,7 +27,6 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
   void _createTicket() {
     createTicketCallApi();
     createTicketTextField(createTicketController, chosenValue);
-    launchWebView();
   }
 
   @override

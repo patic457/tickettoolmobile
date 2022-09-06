@@ -74,6 +74,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "get",
+      "rootUri": "file:///Users/PATIC457/Downloads/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/get-4.6.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "http",
       "rootUri": "file:///Users/PATIC457/Downloads/SDK/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5",
       "packageUri": "lib/",
@@ -176,7 +182,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-06T06:23:38.531686Z",
+  "generated": "2022-09-06T10:25:02.859401Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }

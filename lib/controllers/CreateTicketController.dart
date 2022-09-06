@@ -1,10 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
+import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:http/http.dart' as http;
-
-void launchWebView() {
-  print("1234");
-}
 
 void createTicketCallApi() {
   var response =
@@ -25,4 +22,8 @@ createTicketTextField(createTicketController, chosenValue) {
       : 'Test Ticket';
   print("Create Text Ticket Form => " + _createTicketController);
   print("Dropdownlist => " + chosenValue.toString());
+}
+
+class CreateTicketController extends GetxController {
+   var ticketItems = List<Product>().obs; 
 }
