@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sosotickettool/screens/CreateTicketScreen.dart';
 import 'package:sosotickettool/screens/MyHomeScreen.dart';
@@ -16,11 +19,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      // home: const MyHomeScreen(title: 'Soso Ticket Tool'),
       initialRoute: '/',
       routes: {
         '/': (context) => const MyHomeScreen(title: 'Soso Ticket Tool'),
         '/create': (context) => CreateTicketScreen(),
+        // '/login': (context) => LoginScreen(),
+        // '/register': (context) => LoginScreen(),
       },
     );
   }

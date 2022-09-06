@@ -1,9 +1,11 @@
 import 'dart:convert';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
 import 'package:sosotickettool/services/CreateTicketService.dart';
+import 'package:sosotickettool/widgets/AppBarWidget.dart';
 
 String someVal = '';
 var chosenValue;
@@ -32,6 +34,8 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var appbar = AppBarWidget().appBar(context, 'Create Ticket', 'crateticket');
+
     var dropdownCategory = DropdownButton<String>(
       focusColor: Colors.white,
       value: chosenValue,
@@ -71,20 +75,25 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
     var textField = TextField(
       autofocus: true,
       controller: createTicketController,
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         hintText: 'Test Ticket',
         border: OutlineInputBorder(),
       ),
     );
     var elevatedButton = ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Colors.lightGreen,
+        shape: const StadiumBorder(),
+        padding: const EdgeInsets.all(4.0),
+        primary: const Color(0xffb73c23a),
         minimumSize: const Size.fromHeight(50),
-      ),
+      ).copyWith(elevation: ButtonStyleButton.allOrNull(0.9)),
       onPressed: _createTicket,
-      child: const Text('Create Ticket'),
+      child: const Text(
+        'Create Ticket',
+        style: TextStyle(fontSize: 18.0),
+      ),
     );
-    var createTicketForm = Container(
+    Container createTicketForm = Container(
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -99,12 +108,10 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
         ),
       ),
     );
-    AppBar appbar = AppBar(
-      title: const Text('Create Ticket'),
-    );
+
     Widget scaffold = Scaffold(
       appBar: appbar,
-      body: createTicketForm,
+      body: SingleChildScrollView(child: createTicketForm),
     );
 
     return scaffold;
