@@ -25,8 +25,8 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
   }
 
   void _createTicket() {
-    createTicketCallApi();
-    createTicketTextField(createTicketController, chosenValue);
+    // createTicketCallApi();
+    // createTicketTextField(createTicketController, chosenValue);
   }
 
   @override
