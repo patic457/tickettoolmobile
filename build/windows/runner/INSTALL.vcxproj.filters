@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\CODE\tickettoolmobile\build\windows\CMakeFiles\da1bc1a402e54359cfed07f24b655f25\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2A007B4D-EC26-31BA-81F1-0D5DD2EF9317}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

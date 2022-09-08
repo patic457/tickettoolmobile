@@ -25,20 +25,20 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
 
   final List<Widget> _screenWidget = <Widget>[
     DashboardScreen(),
-    DispatcherScreen(),
+    // DispatcherScreen(),
     const HistoryScreen()
   ];
 
   final List<BottomNavigationBarItem> _menuBar = <BottomNavigationBarItem>[
-    BottomNavigationBarItem(
+    const BottomNavigationBarItem(
       icon: Icon(FontAwesomeIcons.home),
       label: 'Home',
     ),
-    BottomNavigationBarItem(
-      icon: Icon(FontAwesomeIcons.productHunt),
-      label: 'Dispatcher',
-    ),
-    BottomNavigationBarItem(
+    // BottomNavigationBarItem(
+    //   icon: Icon(FontAwesomeIcons.productHunt),
+    //   label: 'Dispatcher',
+    // ),
+    const BottomNavigationBarItem(
       icon: Icon(FontAwesomeIcons.history),
       label: 'History',
     ),
@@ -59,7 +59,8 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     AppBar appbar = AppBarWidget().appBar(context, widget.title, 'main');
     Widget body = _screenWidget.elementAt(_selectedIndex);
 
-    Widget floatingActionButton = FloatingActionButton(
+    Widget floatingActionButton = FloatingActionButton.large(
+      backgroundColor: Colors.green[900],
       child: Icon(FontAwesomeIcons.plus),
       onPressed: _createTicket,
     );
@@ -67,6 +68,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     Widget bottomNavigationBar = BottomNavigationBar(
       items: _menuBar,
       currentIndex: _selectedIndex,
+      elevation: 4.0,
       selectedItemColor: Colors.green,
       unselectedItemColor: const Color(0xFF9D9D9D),
       onTap: _onItemTapped,
@@ -77,6 +79,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
       body: body,
       bottomNavigationBar: bottomNavigationBar,
       floatingActionButton: floatingActionButton,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
 
     return GestureDetector(child: scaffold);

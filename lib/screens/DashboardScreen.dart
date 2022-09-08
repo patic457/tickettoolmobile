@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sosotickettool/widgets/ListViewHistoryWidget.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -8,6 +9,6 @@ class DashboardScreen extends StatefulWidget {
 class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
-    return Text('Dashboard');
+    return ListViewHistoryWidget();
   }
 }

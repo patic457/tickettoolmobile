@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:sosotickettool/widgets/AppBarWidget.dart';
@@ -14,6 +15,30 @@ class CreateTicketScreen extends StatefulWidget {
 }
 
 class _CreateTicketScreenState extends State<CreateTicketScreen> {
+  final List<Map<String, dynamic>> _roles = [
+    {"name": "Super Admin", "desc": "Having full access rights", "role": 1},
+    {
+      "name": "Admin",
+      "desc": "Having full access rights of a Organization",
+      "role": 2
+    },
+    {
+      "name": "Manager",
+      "desc": "Having Magenent access rights of a Organization",
+      "role": 3
+    },
+    {
+      "name": "Technician",
+      "desc": "Having Technician Support access rights",
+      "role": 4
+    },
+    {
+      "name": "Customer Support",
+      "desc": "Having Customer Support access rights",
+      "role": 5
+    },
+    {"name": "User", "desc": "Having End User access rights", "role": 6},
+  ];
   final createTicketController = TextEditingController();
   var cateItems = ['AIS Fiber', 'AIS 5G', 'AIS Store', 'AIS Package'];
   var dropdownvalue = 'AIS Fiber';
@@ -33,40 +58,17 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
   Widget build(BuildContext context) {
     var appbar = AppBarWidget().appBar(context, 'Create Ticket', 'crateticket');
 
-    var dropdownCategory = DropdownButton<String>(
-      focusColor: Colors.white,
-      value: chosenValue,
-      elevation: 3,
-      style: TextStyle(
-        color: Colors.white,
-      ),
-      iconEnabledColor: Colors.black,
-      items: cateItems.map<DropdownMenuItem<String>>((String value) {
-        return DropdownMenuItem<String>(
-          value: value,
-          child: Text(value, style: TextStyle(color: Colors.black)),
-        );
-      }).toList(),
+    var dropdownCategoryField = TextDropdownFormField(
+      onSaved: (dynamic str) {},
       onChanged: (value) => onChangedDropdownCategory(value),
-    );
-    var ddCate = DecoratedBox(
-      decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [
-            Colors.white,
-            Colors.greenAccent
-            //add more colors
-          ]),
-          borderRadius: BorderRadius.circular(5),
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-              color: Color.fromRGBO(0, 0, 0, 0.57),
-              blurRadius: 5,
-            )
-          ]),
-      child: Padding(
-        padding: EdgeInsets.only(left: 30, right: 30),
-        child: dropdownCategory,
+      validator: (dynamic str) {},
+      options: ["AIS Fiber", "AIS PLAY", "AIS Store"],
+      decoration: const InputDecoration(
+        border: OutlineInputBorder(),
+        suffixIcon: Icon(Icons.arrow_drop_down),
+        labelText: "Category",
       ),
+      // dropdownHeight: 120,
     );
 
     var textField = TextField(
@@ -75,6 +77,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
       decoration: const InputDecoration(
         hintText: 'Test Ticket',
         border: OutlineInputBorder(),
+        labelText: "Problem",
       ),
     );
     var elevatedButton = ElevatedButton(
@@ -96,7 +99,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ddCate,
+            dropdownCategoryField,
             const SizedBox(height: 15),
             textField,
             const SizedBox(height: 20),
