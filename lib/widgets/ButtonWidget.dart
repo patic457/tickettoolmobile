@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class MyButtonWidget extends StatefulWidget {
+class ButtonWidget extends StatefulWidget {
   @override
-  State<MyButtonWidget> createState() => _MyWidgetState();
+  State<ButtonWidget> createState() => _MyWidgetState();
 }
 
-class _MyWidgetState extends State<MyButtonWidget> {
+class _MyWidgetState extends State<ButtonWidget> {
   @override
   Widget build(BuildContext context) {
-    Widget DispatcherScreen = Container(
-      child: Text('DispatcherScreen'),
+    Container dispatcherScreen = Container(
+      child: const Text('DispatcherScreen'),
     );
-    return DispatcherScreen;
+    return dispatcherScreen;
   }
 }

@@ -40,7 +40,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
     {"name": "User", "desc": "Having End User access rights", "role": 6},
   ];
   final createTicketController = TextEditingController();
-  var cateItems = ['AIS Fiber', 'AIS 5G', 'AIS Store', 'AIS Package'];
+  var cateItems = ["AIS Fiber", "AIS PLAY", "AIS Store"];
   var dropdownvalue = 'AIS Fiber';
 
   onChangedDropdownCategory(value) {
@@ -62,7 +62,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
       onSaved: (dynamic str) {},
       onChanged: (value) => onChangedDropdownCategory(value),
       validator: (dynamic str) {},
-      options: ["AIS Fiber", "AIS PLAY", "AIS Store"],
+      options: cateItems,
       decoration: const InputDecoration(
         border: OutlineInputBorder(),
         suffixIcon: Icon(Icons.arrow_drop_down),
