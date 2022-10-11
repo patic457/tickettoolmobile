@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sosotickettool/widgets/ListViewHistoryWidget.dart';
+import 'package:sosotickettool/widgets/TicketDetailWidget.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({Key? key}) : super(key: key);
@@ -11,7 +11,15 @@ class HistoryScreen extends StatefulWidget {
 class _HistoryScreenState extends State<HistoryScreen> {
   @override
   Widget build(BuildContext context) {
-    var cc = Column(children: [Text('History')]);
+    var txt = 'History';
+    var cc = Center(
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TicketDetailWidget(text: txt),
+          ]),
+    );
     return cc;
   }
 }
