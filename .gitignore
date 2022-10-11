@@ -5,6 +5,5 @@ linux/
 ios/
 web/
 build/
-
 .flutter-plugins
 .flutter-plugins-dependencies
