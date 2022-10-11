@@ -1,4 +1,4 @@
-package com.example.hihi
+package com.example.tickettoolmobile
 
 import io.flutter.embedding.android.FlutterActivity
 

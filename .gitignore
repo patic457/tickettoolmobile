@@ -1,9 +1,13 @@
 .dart_tool/
+.vscode/
+.idea/
 windows/
 macos/
 linux/
 ios/
 web/
 build/
+test/
 .flutter-plugins
 .flutter-plugins-dependencies
+.metadata

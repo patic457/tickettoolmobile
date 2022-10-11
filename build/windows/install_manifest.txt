@@ -1,5 +1,6 @@
 D:/CODE/tickettoolmobile/build/windows/runner/Debug/data/icudtl.dat
 D:/CODE/tickettoolmobile/build/windows/runner/Debug/flutter_windows.dll
+D:/CODE/tickettoolmobile/build/windows/runner/Debug/connectivity_plus_windows_plugin.dll
 D:/CODE/tickettoolmobile/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
 D:/CODE/tickettoolmobile/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 D:/CODE/tickettoolmobile/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf

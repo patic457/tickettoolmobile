@@ -60,6 +60,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  fonts:
+  - family: DBHeavent
+    fonts:
+    - asset: fonts/DB_Heavent_Cond.ttf
+    - asset: fonts/DB-Heavent-Cond-It.ttf
+    - asset: fonts/DB-Heavent-Bd-Cond.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -83,9 +89,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # assets:
-      # fonts:
+    # fonts:
       # - family: DB Heavent
-        # - asset: fonts/DB-Heavent-Cond.ttf
+        # - asset: fonts/DB_Heavent_Cond.ttf
   #       - asset: fonts/DB-Heavent-Cond-It.ttf
   #       - asset: fonts/DB-Heavent-Bd-Cond.ttf
 

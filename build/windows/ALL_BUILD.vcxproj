@@ -137,6 +137,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="D:\CODE\tickettoolmobile\build\windows\plugins\connectivity_plus_windows\connectivity_plus_windows_plugin.vcxproj">
+      <Project>{7953E99E-5EA4-35D0-B951-B44AAB54B23D}</Project>
+      <Name>connectivity_plus_windows_plugin</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\CODE\tickettoolmobile\build\windows\flutter\flutter_wrapper_app.vcxproj">
       <Project>{2721450F-3516-3E94-8DFB-A89057CB6E8B}</Project>
       <Name>flutter_wrapper_app</Name>

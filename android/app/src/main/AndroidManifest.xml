@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hihi">
+    package="com.example.tickettoolmobile">
    <application
-        android:label="hihi"
+        android:label="tickettoolmobile"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
