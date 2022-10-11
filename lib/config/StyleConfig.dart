@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Config {
+class StyleConfig {
   static const primaryColor = Color(0xff73c23a);
   static const secondaryColor = Color(0xFF25584F);
   static const green900Color = Color(0xFF1E3D35);

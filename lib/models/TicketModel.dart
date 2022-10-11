@@ -1,10 +1,10 @@
-class Ticket {
+class TicketModel {
   final String name;
   final String email;
 
-  Ticket(this.name, this.email);
+  TicketModel(this.name, this.email);
 
-  Ticket.fromJson(Map<String, dynamic> json)
+  TicketModel.fromJson(Map<String, dynamic> json)
       : name = json['name'],
         email = json['email'];
 

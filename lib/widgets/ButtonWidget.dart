@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sosotickettool/config/config.dart';
+import 'package:sosotickettool/config/StyleConfig.dart';
 
 class ButtonWidget extends StatelessWidget {
   final String? text;
