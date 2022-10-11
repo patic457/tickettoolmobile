@@ -11,6 +11,7 @@ class HistoryScreen extends StatefulWidget {
 class _HistoryScreenState extends State<HistoryScreen> {
   @override
   Widget build(BuildContext context) {
-    return ListViewHistoryWidget();
+    var cc = Column(children: [Text('History')]);
+    return cc;
   }
 }

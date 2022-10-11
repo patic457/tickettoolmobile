@@ -83,6 +83,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             dropdownCategoryField,
             const SizedBox(height: 15),
