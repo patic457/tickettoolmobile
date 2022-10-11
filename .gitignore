@@ -1,0 +1,7 @@
+.dart_tool/
+windows/
+macos/
+linux/
+ios/
+web/
+build/

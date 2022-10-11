@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		g6bLI8ocj7TlvdIdEpS3FfA1iN8=
+		xiY6xJ2d3gs0++BxEFll3gdqc54=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib/keyedobjects-101300.nib</key>
 		<data>
@@ -27,10 +27,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			1oDf18r+E+0Lzy/OwMayKRqv1HM=
+			hOpTweKBjcOXCpNQDfGYNbUXzKc=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"adc474d81adeb6ad9af84b0270f1a96c29f27d8e" or cdhash H"d680dfd7cafe13ed0bcf2fcec0c6b2291aafd473"</string>
+			<string>cdhash H"1beb8a71a6526547dc612ce99a8e017a877d1b43" or cdhash H"84ea53c1e2818dc3970a93500df19835b517cca7"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -40,6 +40,24 @@
 			</data>
 			<key>requirement</key>
 			<string>cdhash H"24e7f4f279bfc2c4179c22d0bb59bcdf708bf42b" or cdhash H"f10fc03c2c4306c96c10343f848b28fd10bee046"</string>
+		</dict>
+		<key>Frameworks/Reachability.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Wjn1jjux3hNYIVO851ed++jjJWg=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"ab4af2f1e88248db4e6cba618049f157a0a48b24" or cdhash H"5a39f58e3bb1de13582153bce7579dfbe8e32568"</string>
+		</dict>
+		<key>Frameworks/connectivity_plus_macos.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			pf71n2W4QuwY4ci52VKPZShfwRU=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"898853483c94333162c574cbed8e63c9257720b0" or cdhash H"a5fef59f65b842ec18e1c8b9d9528f65285fc115"</string>
 		</dict>
 		<key>Frameworks/libswiftAppKit.dylib</key>
 		<dict>
@@ -158,6 +176,15 @@
 			<key>requirement</key>
 			<string>cdhash H"1291840c54eedc74a0c7b25a0aa8a3ea8ba2dd1f" or cdhash H"b4aafa8b6249b471052e42bf7ccb9d0b4f778d9e"</string>
 		</dict>
+		<key>Frameworks/libswiftNetwork.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			M05QyfqkBz1gER1PGwPOXeitJ+c=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"18df51e1b6d375363db5a4174cd9b376b46d7f7f" or cdhash H"334e50c9faa4073d60111d4f1b03ce5de8ad27e7"</string>
+		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<dict>
 			<key>cdhash</key>
@@ -194,6 +221,15 @@
 			<key>requirement</key>
 			<string>cdhash H"3406aab10f486b91c2d9334de341504de56a5631" or cdhash H"73e04119822f2d8cd5eeb426ddac2b2b98295def"</string>
 		</dict>
+		<key>Frameworks/path_provider_macos.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ojtYX7Y46zausYB9eVDEEP2k7cQ=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"4cfe89bc24d49e0ccda0dabc65ddd71d25da63b6" or cdhash H"a23b585fb638eb36aeb1807d7950c410fda4edc4"</string>
+		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
 			<key>hash</key>
@@ -209,11 +245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g6bLI8ocj7TlvdIdEpS3FfA1iN8=
+			xiY6xJ2d3gs0++BxEFll3gdqc54=
 			</data>
 			<key>hash2</key>
 			<data>
-			+vTAzuabDBEl2zNFt49wJVFrmnURv+d5qmvKthIktbk=
+			Byk3+rvRkuAgoE368A3erZ+oW/Llt9utH59E4ielTxA=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib/keyedobjects-101300.nib</key>

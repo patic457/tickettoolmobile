@@ -56,10 +56,9 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    AppBar appbar = AppBarWidget().appBar(context, widget.title, 'main');
     Widget body = _screenWidget.elementAt(_selectedIndex);
 
-    Widget floatingActionButton = FloatingActionButton.large(
+    Widget floatingActionButton = FloatingActionButton(
       backgroundColor: Colors.green[900],
       child: Icon(FontAwesomeIcons.plus),
       onPressed: _createTicket,
@@ -75,7 +74,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     );
 
     Widget scaffold = Scaffold(
-      appBar: appbar,
+      appBar: AppBarWidget(title: widget.title, type: 'main'),
       body: body,
       bottomNavigationBar: bottomNavigationBar,
       floatingActionButton: floatingActionButton,

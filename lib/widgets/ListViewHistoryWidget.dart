@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class ListViewHistoryWidget extends StatefulWidget {
-  const ListViewHistoryWidget({Key? key}) : super(key: key);
+class ListViewHistoryWidget extends StatelessWidget {
+  final String? text;
+  final bool isActive;
 
-  @override
-  State<ListViewHistoryWidget> createState() => _MyWidgetState();
-}
+  const ListViewHistoryWidget({
+    Key? key,
+    this.text,
+    this.isActive = true,
+  }) : super(key: key);
 
-class _MyWidgetState extends State<ListViewHistoryWidget> {
   @override
   Widget build(BuildContext context) {
     var itemCount = 5;
-
     var myListTile = ListTile(
       shape: RoundedRectangleBorder(
         side: BorderSide(
@@ -26,7 +25,7 @@ class _MyWidgetState extends State<ListViewHistoryWidget> {
         backgroundColor: Color(0xff6ae792),
         child: Text('T', style: TextStyle(color: Colors.black)),
       ),
-      title: Text('Item' + itemCount.toString()),
+      // title: Text('Item' + itemCount.toString()),
       subtitle: const Text('Item description'),
       trailing: const Icon(Icons.more_vert),
     );

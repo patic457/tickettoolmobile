@@ -330,6 +330,20 @@
       "moduleName": "hihi"
     },
     {
+      "kind": "Import",
+      "name": "connectivity_plus_macos",
+      "printedName": "connectivity_plus_macos",
+      "declKind": "Import",
+      "moduleName": "hihi"
+    },
+    {
+      "kind": "Import",
+      "name": "path_provider_macos",
+      "printedName": "path_provider_macos",
+      "declKind": "Import",
+      "moduleName": "hihi"
+    },
+    {
       "kind": "Function",
       "name": "RegisterGeneratedPlugins",
       "printedName": "RegisterGeneratedPlugins(registry:)",

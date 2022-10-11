@@ -1,10 +1,8 @@
-import 'dart:convert';
-import 'dart:ui';
 import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:sosotickettool/widgets/AppBarWidget.dart';
-import 'package:sosotickettool/controllers/CreateTicketController.dart';
+import 'package:sosotickettool/widgets/ButtonWidget.dart';
 
 String someVal = '';
 var chosenValue;
@@ -56,8 +54,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var appbar = AppBarWidget().appBar(context, 'Create Ticket', 'crateticket');
-
+    var appbar = AppBarWidget(title: 'Create Ticket', type: 'crateticket');
     var dropdownCategoryField = TextDropdownFormField(
       onSaved: (dynamic str) {},
       onChanged: (value) => onChangedDropdownCategory(value),
@@ -80,19 +77,7 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
         labelText: "Problem",
       ),
     );
-    var elevatedButton = ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        shape: const StadiumBorder(),
-        padding: const EdgeInsets.all(4.0),
-        primary: const Color(0xffb73c23a),
-        minimumSize: const Size.fromHeight(50),
-      ).copyWith(elevation: ButtonStyleButton.allOrNull(0.9)),
-      onPressed: _createTicket,
-      child: const Text(
-        'Create Ticket',
-        style: TextStyle(fontSize: 18.0),
-      ),
-    );
+
     Container createTicketForm = Container(
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -103,7 +88,10 @@ class _CreateTicketScreenState extends State<CreateTicketScreen> {
             const SizedBox(height: 15),
             textField,
             const SizedBox(height: 20),
-            elevatedButton,
+            ButtonWidget(
+              text: "Create Ticket",
+              onPressed: _createTicket,
+            ),
           ],
         ),
       ),
